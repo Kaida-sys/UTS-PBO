@@ -53,3 +53,10 @@ DB_PASSWORD=p455w0rd
 php artisan:migrate
 php artisan project:init
 ```
+
+# BUKA BROWSER
+```php
+http://localhost/admin
+username : admin@admin.com
+password : password
+```
