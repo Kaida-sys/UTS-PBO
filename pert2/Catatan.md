@@ -36,10 +36,12 @@ chown -R www-data:www-data bootstrap/*
 
 # DIDALAM VSCODE FOLDER SRC CARI FILE .env
 ```php
+//line 5
 APP_TIMEZONE='Asia/Jakarta'
 APP_URL=http://localhost
 ASSET_URL=http://localhost
 
+//line 28
 DB_CONNECTION=mariadb
 DB_HOST=dbpbo
 DB_PORT=3306
