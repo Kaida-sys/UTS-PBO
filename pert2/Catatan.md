@@ -4,7 +4,7 @@
 cd /root
 mkdir perkuliahan //lakukan ke cd jika foldernya sudah ada
 cd perkuliahan
-git clone git@github.com:djambred/pbo-new.git
+git clone git@github.com:djambred/pbo-new.git //jika sudah dilakukan bisa di skip step ini
 cd pbo-new
 code .
 cd pert2
