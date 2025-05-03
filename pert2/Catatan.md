@@ -52,7 +52,7 @@ DB_PASSWORD=p455w0rd
 
 # BALIK KEDALAM CONTAINER (Terminal)
 ```php
-php artisan:migrate
+php artisan migrate
 php artisan project:init
 ```
 
