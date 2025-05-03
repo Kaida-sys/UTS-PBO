@@ -47,3 +47,9 @@ DB_DATABASE=db_pbo
 DB_USERNAME=root
 DB_PASSWORD=p455w0rd
 ```
+
+# BALIK KEDALAM CONTAINER (Terminal)
+```php
+php artisan:migrate
+php artisan project:init
+```
