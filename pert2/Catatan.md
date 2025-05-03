@@ -1,3 +1,16 @@
+
+# CATATAN UNTUK MULAI DARI BUKA TERMINAL
+```php
+cd /root
+mkdir perkuliahan //lakukan ke cd jika foldernya sudah ada
+cd perkuliahan
+git clone git@github.com:djambred/pbo-new.git
+cd pbo-new
+code .
+cd pert2
+docker compose up -d --build
+```
+
 # BUILD DOCKER
 ```php
 docker compose up -d --build
@@ -8,4 +21,29 @@ docker compose up -d --build
 docker compose down
 ```
 
-# 
+# EKSEKUSI DOCKER
+```php
+docker exec -it pbo bash
+```
+
+# DIDALAM CONTAINER 
+```php
+composer create-project --prefer-dist raugadh/fila-starter .
+php artisan storage:link
+chown -R www-data:www-data storage/*
+chown -R www-data:www-data bootstrap/*
+```
+
+# DIDALAM VSCODE FOLDER SRC CARI FILE .env
+```php
+APP_TIMEZONE='Asia/Jakarta'
+APP_URL=http://localhost
+ASSET_URL=http://localhost
+
+DB_CONNECTION=mariadb
+DB_HOST=dbpbo
+DB_PORT=3306
+DB_DATABASE=db_pbo
+DB_USERNAME=root
+DB_PASSWORD=p455w0rd
+```
