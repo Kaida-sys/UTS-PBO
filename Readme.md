@@ -46,9 +46,8 @@ cd src && code .
 ```php
 docker exec -it uts_pbo bash
 ```
+##### di file .env (folder src) rubah line 1, 5, 6, 7, 29, 31, 33
 ```php
-di file .env (folder src)
-rubah line 1, 5, 6, 7, 29, 31, 33
 //line 1
 APP_NAME="UTS PBO"
 //line 5
