@@ -14,12 +14,20 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // User::factory(10)->create();
-
-        $user = \App\Models\User::factory()->create([
+        if(User::count() == 0){
+            $user = User::factory()->create([
             'name' => 'Admin',
             'email' => 'admin@admin.com',
         ]);
 
         $user->assignRole('super_admin');
+        }
+
+        $this->call([
+            CategorySeeder::class,
+            JenisKelaminSeeder::class,
+            NamaLengkapSeeder::class,
+            NomorSimSeeder::class,
+        ]);
     }
 }
